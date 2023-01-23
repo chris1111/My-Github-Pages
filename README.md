@@ -1,5 +1,5 @@
-# chris1111 Github pages
+# chris1111 [My Github Pages](https://chris1111.github.io/My-Github-Pages/)
 
-- Credit: [Coding's Time](https://github.com/codingstime)
+- Credit navbar: [Coding's Time](https://github.com/codingstime)
 
  
