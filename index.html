@@ -176,205 +176,376 @@
      </div>
      <head>
         <!-- Slider -->
-
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Slider </title>
-        <style>
-        body {
-        background: #2d313a;
-        }
-            
-       #slider {
-         position: relative;
-         width: 500px;
-         height: 290px;
-         margin: 100px auto;
-         overflow: hidden;
-
-         box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-       }
-       #slider ul {
-         position: relative;
-         list-style: none;
-         height: 100%;
-         width: 10000%;
-         padding: 0;
-         margin: 0;
-
-         transition: all 750ms ease;
-         left: 0;
-       }
-       #slider ul li {
-         position: relative;
-         height: 100%;
-
-         float: left;
-       }
-       #slider ul li img{
-         width: 500px;
-         height: 290px;
-
-       }
-
-       #slider #prev, #slider #next {
-         width: 40px;
-         line-height: 40px;
-
-         font-size: 1.5rem;
-         text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-         text-align: center;
-         color: black;
-           background: #D1D1D1;
-         text-decoration: none;
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         transition: all 150ms ease;
-       }
-       #slider #prev:hover, #slider #next:hover {
-         background-color: rgba(0, 0, 0, 0.5);
-         text-shadow: 0;
-           color: silver;
-       }
-       #slider #prev {
-
-       }
-       #slider #next {
-         right: 0px;
-       }
-         </style>
-       </head>
-       <body>
-           <div id="slider">
-             <ul id="slideWrap">
-               <li><a href="https://github.com/chris1111/macOSRamDisk"><img src="PICS/macOSRamDisk.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC"><img src="PICS/HP-Probook-EliteBook-Package-Creator-OC.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Wimlib-Imagex-Package"><img src="PICS/Wimlib-Imagex-Package.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Un-MountEFI"><img src="PICS/Un-MountEFI.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter"><img src="PICS/Wireless USB Big Sur Adapter.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/D-LinkUtility-Package"><img src="PICS/D-LinkUtility-Package.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Icon-Changer"><img src="PICS/Icon-Changer.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/ICNS-Builder"><img src="PICS/ICNS-Builder.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Upload-Image"><img src="PICS/Upload-Image.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Geforce-Kepler-patcher"><img src="PICS/Geforce-Kepler-patcher.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/My-Simple-OC-Themes"><img src="PICS/My Simple Themes OpenCore.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/OpenCanopy-Generator"><img src="PICS/OpenCanopy Generator.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Config-Validator"><img src="PICS/OpenCore Config Validator.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Apple-Create-Install-Media"><img src="PICS/Apple Create Install Media.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Startosinstall-Ventura"><img src="PICS/Startosinstall-Ventura.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Carillon-AppleALC-Version"><img src="PICS/Carillon-AppleALC-Version.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Command-Line-SnapShot-Mounter"><img src="PICS/Command-Line-SnapShot-Mounter.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/OpenCore-Creator"><img src="PICS/OpenCore-Creator.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/RAR-Archiver"><img src="PICS/RAR-Archiver.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/MountEFI"><img src="PICS/MountEFI.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Background-Resizer"><img src="PICS/Background-Resizer.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/SHC-3.8.9b"><img src="PICS/SHC-3.8.9b.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Patch-HD4000-Monterey"><img src="PICS/Patch-HD4000-Monterey.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Kext-Droplet-Big-Sur"><img src="PICS/Kext-Droplet.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Legacy-OpenCore-Packager"><img src="PICS/Legacy-OpenCore-Packager.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/VoodooHDA-OC"><img src="PICS/VoodooHDA-OC.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Drop-EFI-Big-Sur"><img src="PICS/Drop-EFI-Big-Sur.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator"><img src="PICS/HP-Probook-EliteBook-Package-Creator.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Legacy-Video-patch"><img src="PICS/Legacy-Video-patch.png" alt=""></a></li>
-               <li><a href="https://github.com/chris1111/Chameleon-Mac-OS-X-Snow-Leopard"><img src="PICS/Chameleon-Mac-OS-X-Snow-Leopard.png" alt=""></a></li>
-             </ul>
-             <a id="prev" href="#">&#8810;</a>
-             <a id="next" href="#">&#8811;</a>
-           </div>
-           
-         <script>
-             <!-- js part: by chris1111 -->
-             
-           var responsiveSlider = function() {
-
-       var slider = document.getElementById("slider");
-       var sliderWidth = slider.offsetWidth;
-       var slideList = document.getElementById("slideWrap");
-       var count = 1;
-       var items = slideList.querySelectorAll("li").length;
-       var prev = document.getElementById("prev");
-       var next = document.getElementById("next");
-
-       window.addEventListener('resize', function() {
-         sliderWidth = slider.offsetWidth;
-       });
-
-       var prevSlide = function() {
-         if(count > 1) {
-           count = count - 2;
-           slideList.style.left = "-" + count * sliderWidth + "px";
-           count++;
-         }
-         else if(count = 1) {
-           count = items - 1;
-           slideList.style.left = "-" + count * sliderWidth + "px";
-           count++;
-         }
-       };
-
-       var nextSlide = function() {
-         if(count < items) {
-           slideList.style.left = "-" + count * sliderWidth + "px";
-           count++;
-         }
-         else if(count = items) {
-           slideList.style.left = "0px";
-           count = 1;
-         }
-       };
-
-       next.addEventListener("click", function() {
-         nextSlide();
-       });
-
-       prev.addEventListener("click", function() {
-         prevSlide();
-       });
-
-       setInterval(function() {
-         nextSlide()
-       }, 5000);
-
-       };
-
-       window.onload = function() {
-       responsiveSlider();
-       }
-
-
-         </script>
-
-       </body>
-       </html>
-<div align="center">
-         </strong><right><br><strong></strong><form style="" target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input value="_donations" name="cmd" type="hidden" /><input value="leblond1111@gmail.com" name="business" type="hidden" /><input value="EN" name="lc" type="hidden" /><input value="chris1111 Github" name="item_name" type="hidden" /><input value="0" name="no_note" type="hidden" /><input value="EUR" name="currency_code" type="hidden" /><input value="PP-DonationsBF:don13.png:NonHostedGuest" name="bn" type="hidden" /><input alt="PayPal - The simplest and most secure online payment solution!" name="submit" border="0" src="https://user-images.githubusercontent.com/6248794/150708009-1d926503-368d-4321-8f7a-903291a225a2.png" type="image" /><img style="width: 1px; height: 1px;" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" border="0" alt="" /></form><strong>
-</form>
-<script type="text/javascript">
-        window.showSpoiler = function (obj)
-            {
-            var inner = obj.parentNode.getElementsByTagName("div")[0];
-            if (inner.style.display == "none")
-                inner.style.display = "";
-            else
-                inner.style.display = "none";
+        <head>
+          <title>Slideshow Github</title>
+          <style>
+              body {
+              background: #2d313a;
+             }
+              
+            * {
+              box-sizing: border-box
             }
-    </script>
-    <div class="spoiler">
-            <img type="image"
-        id="image" src="https://user-images.githubusercontent.com/6248794/208320176-d7baf202-d853-4116-82f0-4ce8ae08d5d0.gif" value="" onclick="showSpoiler(this);" style="outline: none;"
-            onmouseover="this.src='https://user-images.githubusercontent.com/6248794/208320212-1658f627-2c31-4681-a9cb-edecca027969.png '"
-            onmouseout="this.src='https://user-images.githubusercontent.com/6248794/208320212-1658f627-2c31-4681-a9cb-edecca027969.png'" />
-         <input type="hidden" value="https://user-images.githubusercontent.com/6248794/208301908-b8b4db6c-f5d7-4838-b767-49a72eabcd37.gif">
-         <div class="inner" style="display:none;">
-             <img src="https://user-images.githubusercontent.com/6248794/208320246-93bf0823-58b9-4be4-95f8-c29a2b932765.png" alt="Support Donate" style="width:20%;">
-         </div>
-        </div>
-        <div id="main" role="main" class="container">
-    </div>
+            body {
+              font-family: Verdana, sans-serif;
+              margin: 0
+            }
+            .mySlides {
+              display: none
+            }
+             
+             img {
+                 
+             }
+            
+            .slideshow-container {
+              max-width: 300px;
+              position: relative;
+              margin: auto;
+            }
+              
+            /* Next & previous buttons */
+            .prev,
+            .next {
+              cursor: pointer;
+              position: absolute;
+              top: 45%;
+              width: auto;
+              padding: 8px;
+              margin-top: -22px;
+              color: #33BEFF;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+              
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+              background-color: rgba(65, 69, 71);
+            }
+            /* Caption text */
+            .text {
+              color: #ffffff;
+              font-size: 12px;
+              padding: 4px 6px;
+              position: absolute;
+              bottom: 4px;
+              width: 100%;
+              text-align: center;
+            }
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #ffffff;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade {
+              from {
+                opacity: .4
+              }
+              to {
+                opacity: 1
+              }
+            }
+            @keyframes fade {
+              from {
+                opacity: .4
+              }
+              to {
+                opacity: 1
+              }
+            }
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev,
+              .next,
+              .text {
+                font-size: 11px
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <div class="slideshow-container">
+              <div align="center">
+                  <div class="mySlidesfade">
+                  <div class="numbertext">
+                  </div>
+                  <a href="https://github.com/chris1111/macOSRamDisk"><img src="https://user-images.githubusercontent.com/6248794/216846165-bd6f160b-987d-4c31-a656-838c83cb53c3.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                  <br>
+                  <div class="text" style="color:DodgerBlue;">macOS-RamDisk</div>
+              </div>
+                  <div class="mySlidesfade">
+                      <div href="numbertext">
+                      </div>
+                      <a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC"><img src="https://user-images.githubusercontent.com/6248794/215273918-aa37a758-3847-4a76-a288-934a206fc1d9.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                      <br>
+                      <div class="text" style="color:DodgerBlue;">HP-Probook-EliteBook-Package-Creator-OC</div>
+                  </div>
+                  <div class="mySlidesfade">
+                <div class="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Wimlib-Imagex-Package"><img src="https://user-images.githubusercontent.com/6248794/215288415-c91f5654-30e8-440e-a7eb-c8c69081d66b.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Wimlib-Imagex-Package</div>
+            </div>
+               <div class="mySlidesfade">
+               <div class="numbertext">
+               </div>
+               <a href="https://github.com/chris1111/ICNS-Builder"><img src="https://user-images.githubusercontent.com/6248794/215273919-5430dab6-2856-41df-92c1-c32e6cba223d.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+               <br>
+               <div class="text" style="color:DodgerBlue;">ICNS-Builder</div>
+            </div>
+               <div class="mySlidesfade">
+                   <div href="numbertext">
+                   </div>
+                   <a href="https://github.com/chris1111/Un-MountEFI"><img src="https://user-images.githubusercontent.com/6248794/215288392-ab6641e2-93ea-4730-9794-f2a8adb1df03.png" style="width:60%"><div><p
+                       style="color:DodgerBlue;"></p></div></a>
+                   <br>
+                   <div class="text" style="color:DodgerBlue;">(Un)mount EFI</div>
+               </div>
+               <div class="mySlidesfade">
+                   <div class="numbertext">
+                   </div>
+                   <a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter"><img src="https://user-images.githubusercontent.com/6248794/215288414-86a65104-41c4-4203-960e-706baf2ca4fa.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                   <br>
+                   <div class="text" style="color:DodgerBlue;">Wireless USB Big Sur Adapter</div>
+               </div>
+               <div class="mySlidesfade">
+                   <div href="numbertext">
+                   </div>
+                   <a href="https://github.com/chris1111/D-LinkUtility-Package"><img src="https://user-images.githubusercontent.com/6248794/215288401-83452c73-0952-4c3c-8977-048e4b299917.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                   <br>
+                   <div class="text" style="color:DodgerBlue;">D-LinkUtility-Package</div>
+               </div>
+               <div class="mySlidesfade">
+                   <div href="numbertext">
+                   </div>
+                   <a href="https://github.com/chris1111/Icon-Changer"><img src="https://user-images.githubusercontent.com/6248794/215288402-21604ebc-ee7d-4e06-85bf-1d7f99ed295e.png" style="width:60%"><div><p
+                       style="color:DodgerBlue;"></p></div></a>
+                   <br>
+                   <div class="text" style="color:DodgerBlue;">Icon Changer</div>
+               </div>
+               <div class="mySlidesfade">
+               <div class="numbertext">
+               </div>
+               <a href="https://github.com/chris1111/ICNS-Builder"><img src="https://user-images.githubusercontent.com/6248794/215273919-5430dab6-2856-41df-92c1-c32e6cba223d.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+               <br>
+               <div class="text" style="color:DodgerBlue;">ICNS-Builder</div>
+            </div>
+               <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Upload-Image"><img src="https://user-images.githubusercontent.com/6248794/217684454-a1d5b8b7-cb18-4fcd-b38e-15eccb34dcf7.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Upload Image</div>
+            </div>
+               <div class="mySlidesfade">
+                   <div href="numbertext">
+                   </div>
+                   <a href="https://github.com/chris1111/Geforce-Kepler-patcher"><img src="https://user-images.githubusercontent.com/6248794/215273916-6924df3b-9d4f-475d-ae1e-dce5c6c0720f.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                   <br>
+                   <div class="text" style="color:DodgerBlue;">Geforce Kepler Patcher</div>
+               </div>
+               <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/My-Simple-OC-Themes"><img src="https://user-images.githubusercontent.com/6248794/217685160-02d208fa-6f70-4ca6-8732-9359330fe5a1.png" style="width:60%"><div><p
+                    style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">My-Simple-theme-for-OpenCore</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/OpenCanopy-Generator"><img src="https://user-images.githubusercontent.com/6248794/217685927-6121822f-4403-4bbc-8d63-4a1dc650d07e.png" style="width:60%"><div><p  style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">OpenCanopy Generator</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/OpenCore-Creator"><img src="https://user-images.githubusercontent.com/6248794/215288410-a718ee0b-1111-444c-ac41-571018144a76.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">OpenCore Creator</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Startosinstall-Ventura"><img src="https://user-images.githubusercontent.com/6248794/215288403-95746c2e-074e-4b35-9331-3d66e8d37f34.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Startosinstall-Ventura</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Config-Validator"><img src="https://user-images.githubusercontent.com/6248794/215288396-2aea9405-8910-45af-a6b2-d428dbba799b.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">OpenCore Config Validator</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Apple-Create-Install-Media"><img src="https://user-images.githubusercontent.com/6248794/215288400-3e0c7b8b-0e26-4f50-9cea-191c665edc61.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Apple-Create-Install-Media</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Legacy-OpenCore-Packager"><img src="https://user-images.githubusercontent.com/6248794/215288408-8af6d9d7-3ce8-4973-84b1-89fbdb2e8d94.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Legacy-OpenCore-Packager</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Command-Line-SnapShot-Mounter"><img src="https://user-images.githubusercontent.com/6248794/215288399-f3a14482-aac1-442c-a1a3-59057e6d7e23.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Command Line SnapShot Mounter</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Carillon-AppleALC-Version"><img src="https://user-images.githubusercontent.com/6248794/217688276-0bd39458-5039-453e-a702-3cdb428b6b0e.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Carillon-AppleALC-Version</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/RAR-Archiver"><img src="https://user-images.githubusercontent.com/6248794/215288412-94bef308-5e94-45a5-89b8-f32d5aac1d4c.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">RAR-Archiveur</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/MountEFI"><img src="https://user-images.githubusercontent.com/6248794/215288406-5d7b7db5-f58a-4ce1-9798-a735447939dd.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Mount-EFI</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Drop-EFI-Big-Sur"><img src="https://user-images.githubusercontent.com/6248794/217689938-bb1beeb5-810c-4648-8126-071306ccbfed.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Drop EFI</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator"><img src="https://user-images.githubusercontent.com/6248794/217690519-2e524a12-52c9-4f13-9c08-f2250a5c1074.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">HP-Probook-EliteBook-Package-Creator</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Legacy-Video-patch"><img src="https://user-images.githubusercontent.com/6248794/217691126-8d5cfb2c-04d4-4fe5-bc33-b4fa084dd0da.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Legacy-Video-patch</div>
+            </div>
+            <div class="mySlidesfade">
+                <div href="numbertext">
+                </div>
+                <a href="https://github.com/chris1111/Chameleon-Mac-OS-X-Snow-Leopard"><img src="https://user-images.githubusercontent.com/6248794/217692530-1788b2ae-b6e3-4d2c-86de-7ab39ac2439b.png" style="width:60%"><div><p style="color:DodgerBlue;"></p></div></a>
+                <br>
+                <div class="text" style="color:DodgerBlue;">Chameleon-Mac-OS-X-Snow-Leopard</div>
+            </div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+            <span class="dot" onclick="currentSlide(17)"></span>
+            <span class="dot" onclick="currentSlide(18)"></span>
+            <span class="dot" onclick="currentSlide(19)"></span>
+            <span class="dot" onclick="currentSlide(20)"></span>
+            <span class="dot" onclick="currentSlide(21)"></span>
+            <span class="dot" onclick="currentSlide(22)"></span>
+            <span class="dot" onclick="currentSlide(23)"></span>
+            <span class="dot" onclick="currentSlide(24)"></span>
+            <span class="dot" onclick="currentSlide(25)"></span>
+          <script>
+          <!-- JS: by chris1111: -->
+              
+            let slideIndex = 0;
+            let timeoutId = null;
+            const slides = document.getElementsByClassName("mySlidesfade");
+            const dots = document.getElementsByClassName("dot");
+            
+            showSlides();
+            function currentSlide(index) {
+                 slideIndex = index;
+                 showSlides();
+            }
+           function plusSlides(step) {
+              
+              if(step < 0) {
+                  slideIndex -= 2;
+                  
+                  if(slideIndex < 0) {
+                    slideIndex = slides.length - 1;
+                  }
+              }
+              
+              showSlides();
+           }
+            function showSlides() {
+              for(let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove('active');
+              }
+              slideIndex++;
+              if(slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].classList.add('active');
+               if(timeoutId) {
+                  clearTimeout(timeoutId);
+               }
+              timeoutId = setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+          </script>
     <!-- FOOTER  -->
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
        <a href="https://www.insanelymac.com/forum/profile/951341-chris1111/"><img SRC="https://user-images.githubusercontent.com/6248794/91639282-6afc7780-e9e3-11ea-8675-e0981d39c669.png"</a>
