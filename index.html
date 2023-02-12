@@ -141,7 +141,24 @@
                  top: 64px;
               }
            }
+           
+           body {
+                 background-color: #2d313a;
+                 color: #6E6A74;
+                 font-size: 15px;
+               }
+
+               .dark-mode {
+                 background-color: #DBDFE2;
+                 color: #2d313a;
+               }
        </style>
+       <script>
+           function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+           }
+       </script>
 </head>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
@@ -159,6 +176,7 @@
          </label>
          <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
          <nav class="navbar-menu">
+            <button class="button" onclick="myFunction()">Dark Light</button>
             <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
             <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
             <a href="https://github.com/chris1111/My-Simple-OC-Themes" class="navbar-link">OpenCore Design</a>
