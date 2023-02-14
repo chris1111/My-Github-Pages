@@ -168,7 +168,7 @@
            window.count = 1;
            
            $(function() {
-             $('#switchIndicator').html(`<p>${enabled ? '<h3>☀︎</h3>Light' : '<h3>☽</h3>Dark'}</p>`);
+             $('#switchIndicator').html(`<p>${enabled ? '<h1>☀︎</h1>' : '<h1>☽</h1>'}</p>`);
            });
 
            // Toggle click functionality using jQuery's .on() & .off() methods
@@ -186,7 +186,7 @@
                  $('#btn').off('click', handleClick);
              }
 
-             $('#switchIndicator').html(`<p>${enabled ? '<h3>☀︎</h3>Light' : '<h3>☽</h3>Dark'}</p>`);
+             $('#switchIndicator').html(`<p>${enabled ? '<h1>☀︎</h1>' : '<h1>☽</h1>'}</p>`);
              
            }
 
