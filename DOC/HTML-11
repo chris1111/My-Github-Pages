@@ -109,7 +109,8 @@
                text-decoration: none;
                background-color: #212529;
                color: #212529;
-               border-radius: 1000px;
+               border: 1px solid silver;
+               border-radius:50px;
                transition: filter .15s;
            }
            
