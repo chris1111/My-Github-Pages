@@ -147,21 +147,24 @@
        }
        
        .button{
-          display: inline-block;
-          padding: .5rem 1.75rem;
-          text-align: center;
-          text-decoration: none;
-          border-radius: 9999px;
-          transition: filter .15s;
-       }
-
-       .button:hover{
-          filter: brightness(.9);
-       }
+            display: flex;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius:50px;
+            box-shadow: 0px 0px 5px 5px rgb(0,0,0);
+            transition: color .15s;
+        }
+       
        .button {
          transition-duration: 0.4s;
        }
 
+       .button:hover {
+         background-color: DodgerBlue; /* DodgerBlue */
+         color: white;
+       }
+       
        @media only screen and (max-width:1024px) {
            .navbar-menu{
                gap: .5rem;
@@ -238,18 +241,20 @@
              <h1 class="logo">
                 <img src="https://avatars.githubusercontent.com/u/6248794?s=96&v=4" width="50">
             </h1>
+             <div align="left">
+                 <div id="container">
+                 <h6>Toggle</h6>
+                 <label class="switch">
+                 <input type="checkbox" onclick="changeMode()">
+                 <span class="slider"></span>
+                 </label>
+                 </div>
+             </div>
              <label for="navbar-toggler" class="navbar-toggler">
                <i class="fas fa-bars"></i>
             </label>
              <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
-                     <div id="container">
-                     <h6>Toggle</h6>
-                     <label class="switch">
-                     <input type="checkbox" onclick="changeMode()">
-                     <span class="slider"></span>
-                     </label>
-                     </div>
-               <nav class="navbar-menu">
+            <nav class="navbar-menu">
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
                <a href="https://chris1111.github.io/Site-My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>
