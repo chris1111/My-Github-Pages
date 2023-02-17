@@ -5,234 +5,268 @@
    <head>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
    <title>chris1111 Github pages</title>
-       <style>
-           /*
-            css part: by chris1111
-            */
-           
-           :root{
-               font-family: "Open Sans", sans-serif;
-               font-size: 16px;
-               font-weight: 400;
-           }
-           
-           *{
-               margin: 0;
-               box-sizing: border-box;
-           }
-           
-           .page{
-               min-height: 100vh;
-               background-color: #2d313a;
-               color: #000;
-           }
-           
-           .navbar{
-               position: sticky;
-               top: 0;
-               background-color: #212529;
-               color: #fff;
-           }
-           
-           .navbar-inner{
-               display: flex;
-               flex-direction: row;
-               align-items: center;
-               justify-content: space-between;
-               height: 64px;
-               max-width: 1440px;
-               margin-inline: auto;
-               padding-inline: 4%;
-           }
-           
-           .navbar-toggler,
-           .navbar-toggler-check{
-               display: none;
-           }
-           
+   <style>
+       /* css by chris1111 */
+
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+       body {
+         margin: 0;
+         padding: 0;
+         font-family: "Open Sans", sans-serif;
+         background: #2d313a;
+         transition: .6s;
+       }
+       #container {
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+       }
+       .switch {
+         position: relative;
+         display: inline-block;
+         width: 70px;
+         height: 38px;
+       }
+       .switch input {
+         display: none;
+       }
+       .slider {
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: linear-gradient(180deg,#777,#3a3a3a);
+         border-radius: 34px;
+         transition: .4s;
+       }
+       .slider:before {
+         content: "";
+         position: absolute;
+         height: 30px;
+         width: 30px;
+         left: 4px;
+         bottom: 4px;
+         background: url(PICS/Toggle.png);
+         border-radius: 50%;
+         transition: .4s;
+       }
+       input:checked + .slider {
+         background: DodgerBlue;
+       }
+       input:checked + .slider:before {
+         transform: translateX(30px);
+       }
+       .dark-mode {
+         background: #2d313a;
+       }
+
+       /*
+        navbar part:
+        */
+       
+       :root{
+           font-family: "Open Sans", sans-serif;
+           font-size: 16px;
+           font-weight: 400;
+       }
+       
+       *{
+           margin: 0;
+           box-sizing: border-box;
+       }
+       
+       .page{
+           min-height: 100vh;
+           background-color: #2d313a;
+           color: #000;
+       }
+       
+       .navbar{
+           position: sticky;
+           top: 0;
+           background-color: #212529;
+           color: #fff;
+       }
+       
+       .navbar-inner{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-between;
+           height: 64px;
+           max-width: 1440px;
+           margin-inline: auto;
+           padding-inline: 4%;
+       }
+       
+       .navbar-toggler,
+       .navbar-toggler-check{
+           display: none;
+       }
+       
+       .navbar-menu{
+           display: flex;
+           flex-direction: row;
+           gap: 1rem;
+       }
+       
+       .navbar-link{
+           display: block;
+           padding: .5rem 1.25rem;
+           text-align: center;
+           text-decoration: none;
+           color: rgba(255, 255, 255, .5);
+           transition: color .15s;
+       }
+       
+       .navbar-link:hover{
+           color: #fff;
+       }
+       
+       .navbar-link-active{
+           color: #fff;
+           pointer-events: none;
+       }
+       
+       .logo{
+           font-family: "Montserrat", sans-serif;
+           font-size: 1.75rem;
+           font-weight: 600;
+           letter-spacing: 1px;
+       }
+       
+       .logo-link{
+           text-decoration: none;
+           color: inherit;
+       }
+       
+       .button{
+            display: flex;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius:50px;
+            box-shadow: 0px 0px 5px 5px rgb(0,0,0);
+            transition: color .15s;
+        }
+       
+       .button {
+         transition-duration: 0.4s;
+       }
+
+       .button:hover {
+         background-color: DodgerBlue; /* DodgerBlue */
+         color: white;
+       }
+       
+       @media only screen and (max-width:1024px) {
            .navbar-menu{
-               display: flex;
-               flex-direction: row;
-               gap: 1rem;
-           }
-           
-           .navbar-link{
-               display: block;
-               padding: .5rem 1.25rem;
-               text-align: center;
-               text-decoration: none;
-               color: rgba(255, 255, 255, .5);
-               transition: color .15s;
-           }
-           
-           .navbar-link:hover{
-               color: #fff;
-           }
-           
-           .navbar-link-active{
-               color: #fff;
-               pointer-events: none;
-           }
-           
-           .logo{
-               font-family: "Montserrat", sans-serif;
-               font-size: 1.75rem;
-               font-weight: 600;
-               letter-spacing: 1px;
-           }
-           
-           .logo-link{
-               text-decoration: none;
-               color: inherit;
+               gap: .5rem;
            }
            
            .button{
-                display: flex;
-                padding: 0;
-                text-align: center;
-                text-decoration: none;
-                border-radius:50px;
-                box-shadow: 0px 0px 5px 5px rgb(0,0,0);
-                transition: color .15s;
-            }
-           
-           .button {
-             transition-duration: 0.4s;
-           }
-
-           .button:hover {
-             background-color: DodgerBlue; /* DodgerBlue */
-             color: white;
+               padding-inline: 1.5rem;
            }
            
-           .button:hover{
-               filter: brightness(.9);
-           }
-           
-           .btnDL{
-               display: flex;
-               padding: auto;
-               text-align: center;
-               text-decoration: none;
-               background-color: #212529;
-               color: #212529;
-               border-radius:20px;
-               box-shadow: 0px 0px 2px 2px rgb(0,0,0);
-               transition: filter .15s;
-           }
-           
-           .btnDL {
-             transition-duration: 0.4s;
-           }
-
-           .btnDL:hover {
-             background-color: DodgerBlue; /* DodgerBlue */
-             color: white;
-           }
-           
-           .btnDL:hover{
-               filter: brightness(.7);
-           }
-           
-           @media only screen and (max-width:1024px) {
-               .navbar-menu{
-                   gap: .5rem;
-               }
-               
-               .button{
-                   padding-inline: 1.5rem;
-               }
-           }
-           
-           @media only screen and (max-width:768px) {
-               :root{
-                   font-size: 15px;
-               }
-               
-               .navbar-menu{
-                   position: absolute;
-                   top: -100vh;
-                   left: 0;
-                   width: 100%;
-                   flex-direction: column;
-                   padding: .5rem 4% 1rem;
-                   background-color: #212529;
-                   z-index: -1;
-                   transition: top .5s;
-               }
-               
-               .navbar-toggler{
-                   display: block;
-                   font-size: 1.5rem;
-               }
-               
-               .navbar-toggler-check:checked + .navbar-menu{
-                   top: 64px;
-               }
-           }
-           
-           h4 {
-               color: #596B92;
-               
-           }
-           
-           h5 {
-               color: #596B92;
-               
-           }
-           
-           /* toggle */
-           body {
-               background-color: #2d313a;
-               color: #DBDFE2;
+       }
+       
+       @media only screen and (max-width:768px) {
+           :root{
                font-size: 15px;
            }
            
-           .dark-mode {
-               background-color: #DBDFE2;
-               color: #2d313a;
+           .navbar-menu{
+               position: absolute;
+               top: -100vh;
+               left: 0;
+               width: 100%;
+               flex-direction: column;
+               padding: .5rem 4% 1rem;
+               background-color: #212529;
+               z-index: -1;
+               transition: top .5s;
            }
            
-       </style>
-       <script>
-           function myFunction() {
+           .navbar-toggler{
+               display: block;
+               font-size: 1.5rem;
+           }
+           
+           .navbar-toggler-check:checked + .navbar-menu{
+               top: 64px;
+           }
+       }
+       
+       h4 {
+           color: #596B92;
+           
+       }
+       
+       h5 {
+           color: #596B92;
+           
+       }
+       
+       h6 {
+           color: rgba(255, 255, 255, .5);
+           
+       }
+       
+       /* toggle */
+       
+       .dark-mode {
+           background-color: #DBDFE2;
+           color: #2d313a;
+       }
+
+   </style>
+   
+   <script>
+           function changeMode() {
               var element = document.body;
               element.classList.toggle("dark-mode");
            }
-       </script>
+   </script>
    
-</head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-</head>
-
-<body class="page">
-
-   <header class="navbar">
-      <div class="navbar-inner">
-          <h1 class="logo">
-             <img src="https://avatars.githubusercontent.com/u/6248794?s=96&v=4" width="50">
-         </h1>
-          <label for="navbar-toggler" class="navbar-toggler">
-            <i class="fas fa-bars"></i>
-         </label>
-         <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
-         <nav class="navbar-menu">
-            <button class="btnDL" onclick="myFunction()"><img src="PICS/Toggle.png"></button>
-            <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
-            <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
-            <a href="https://chris1111.github.io/Site-My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>
-            <a href="https://github.com/chris1111" class="navbar-link">About</a>
-            <a href="https://www.hackintosh-montreal.com/h31-page-accueil" class="navbar-link">Forum</a>
-            <a href="https://github.com/chris1111/Github-Pages.app" class="navbar-link">Status Bar App</a>
-            <a href="mailto:leblond1111@gmail.com" class="button" onClick="document.getElementById('form').submit()">
-            <img src="PICS/Contact.png" alt="Send" /></a>
-         </nav>
-      </div>
-     </header>
-     <div align="center">
+   </head>
+   <body class="page">
+      <header class="navbar">
+         <div class="navbar-inner">
+             <h1 class="logo">
+                <img src="https://avatars.githubusercontent.com/u/6248794?s=96&v=4" width="50">
+            </h1>
+             <div align="left">
+                 <div id="container">
+                 <h6>Toggle</h6>
+                 <label class="switch">
+                 <input type="checkbox" onclick="changeMode()">
+                 <span class="slider"></span>
+                 </label>
+                 </div>
+             </div>
+             <label for="navbar-toggler" class="navbar-toggler">
+               <i class="fas fa-bars"></i>
+            </label>
+             <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
+            <nav class="navbar-menu">
+               <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
+               <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
+               <a href="https://chris1111.github.io/Site-My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>
+               <a href="https://github.com/chris1111" class="navbar-link">About</a>
+               <a href="https://www.hackintosh-montreal.com/h31-page-accueil" class="navbar-link">Forum</a>
+               <a href="https://github.com/chris1111/Github-Pages.app" class="navbar-link">StatusBar App</a>
+               <a href="mailto:leblond1111@gmail.com" class="button" onClick="document.getElementById('form').submit()">
+               <img src="PICS/Contact.png" alt="Send" /></a>
+            </nav>
+         </div>
+        </header>
+      <div align="center">
      <h4><b>I share some projects that may be useful in your research.</b></h4>
      <h5>When you mouse over the slide Show, use the arrow to choose the project and click on the image to go directly to the Github projects.</h5>
      </div>
