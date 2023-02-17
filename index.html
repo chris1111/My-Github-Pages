@@ -14,8 +14,6 @@
          margin: 0;
          padding: 0;
          font-family: "Open Sans", sans-serif;
-         font-size: 16px;
-         font-weight: 400;
          background: #2d313a;
          transition: .6s;
        }
@@ -74,6 +72,12 @@
         */
        
        :root{
+           font-family: "Open Sans", sans-serif;
+           font-size: 16px;
+           font-weight: 400;
+       }
+       
+       *{
            margin: 0;
            box-sizing: border-box;
        }
@@ -237,13 +241,23 @@
              <h1 class="logo">
                 <img src="https://avatars.githubusercontent.com/u/6248794?s=96&v=4" width="50">
             </h1>
+             <head>
+                 <div align="right">
                  <div id="container">
+                 <h6>Toggle</h6>
                  <label class="switch">
                  <input type="checkbox" onclick="changeMode()">
                  <span class="slider"></span>
                  </label>
                  </div>
-                 <nav class="navbar-menu">
+             </div>
+             </header>
+              <head>
+                <label for="navbar-toggler" class="navbar-toggler">
+               <i class="fas fa-bars"></i>
+            </label>
+             <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
+            <nav class="navbar-menu">
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
                <a href="https://chris1111.github.io/Site-My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>
@@ -254,8 +268,7 @@
                <img src="PICS/Contact.png" alt="Send" /></a>
             </nav>
          </div>
-         <hr>
-      </header>
+        </header>
       <div align="center">
      <h4><b>I share some projects that may be useful in your research.</b></h4>
      <h5>When you mouse over the slide Show, use the arrow to choose the project and click on the image to go directly to the Github projects.</h5>
@@ -1086,7 +1099,7 @@
        <a href="https://github.com/acidanthera/OpenCorePkg"><img SRC="PICS/OpenCore.png"</a>
        <a href="https://github.com/chris1111"><img SRC="PICS/Github.png"</a>
        <a href="https://www.youtube.com/channel/UC0YX7sSja4FYJDQQqwrsYJg"><img SRC="PICS/Youtube.png"</a>
-           </footer>
+    </footer>
        <!-- END FOOTER -->
       </div>
 </html>
