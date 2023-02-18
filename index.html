@@ -3,239 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+           <div id="container">
+           <h6>Toggle</h6>
+           <br>
+           <label class="switch">
+           <input type="checkbox" onclick="changeMode()">
+           <span class="slider"></span>
+           </label>
+           </div>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>chris1111 Github pages</title>
-   <style>
-       /* css by chris1111 */
-
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-       body {
-         margin: 0;
-         padding: 0;
-         font-family: "Open Sans", sans-serif;
-         background: #2d313a;
-         transition: .6s;
-       }
-       #container {
-         width: 100%;
-         height: 100vh;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-       }
-       .switch {
-         position: relative;
-         display: inline-block;
-         width: 70px;
-         height: 38px;
-         border-radius: 50px;
-         box-shadow: 0px 0px 4px 4px rgb(0,0,0);
-       }
-       .switch input {
-         display: none;
-       }
-       .slider {
-         position: absolute;
-         cursor: pointer;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         background: linear-gradient(180deg,#777,#3a3a3a);
-         border-radius: 34px;
-         transition: .4s;
-       }
-       .slider:before {
-         content: "";
-         position: absolute;
-         height: 30px;
-         width: 30px;
-         left: 5px;
-         bottom: 4px;
-         background: url(PICS/Toggle.png);
-         border-radius: 50%;
-         box-shadow: 0px 0px 4px 4px rgb(0,0,0);
-         transition: .4s;
-       }
-       input:checked + .slider {
-         background: DodgerBlue;
-       }
-       input:checked + .slider:before {
-         transform: translateX(30px);
-       }
-       .dark-mode {
-         background: #2d313a;
-       }
-
-       /*
-        navbar part:
-        */
-       
-       :root{
-           font-family: "Open Sans", sans-serif;
-           font-size: 16px;
-           font-weight: 400;
-       }
-       
-       *{
-           margin: 0;
-           box-sizing: border-box;
-       }
-       
-       .page{
-           min-height: 100vh;
-           background-color: #2d313a;
-           color: #000;
-       }
-       
-       .navbar{
-           position: sticky;
-           top: 0;
-           background-color: #212529;
-           color: #fff;
-       }
-       
-       .navbar-inner{
-           display: flex;
-           flex-direction: row;
-           align-items: center;
-           justify-content: space-between;
-           height: 100px;
-           max-width: 1440px;
-           margin-inline: auto;
-           padding-inline: 4%;
-       }
-       
-       .navbar-toggler,
-       .navbar-toggler-check{
-           display: none;
-       }
-       
-       .navbar-menu{
-           display: flex;
-           flex-direction: row;
-           gap: 1rem;
-       }
-       
-       .navbar-link{
-           display: block;
-           padding: .5rem 1.25rem;
-           text-align: center;
-           text-decoration: none;
-           color: rgba(255, 255, 255, .5);
-           transition: color .15s;
-       }
-       
-       .navbar-link:hover{
-           color: #fff;
-       }
-       
-       .navbar-link-active{
-           color: #fff;
-           pointer-events: none;
-       }
-       
-       .logo{
-           font-family: "Montserrat", sans-serif;
-           font-size: 1.75rem;
-           font-weight: 600;
-           letter-spacing: 1px;
-       }
-       
-       .logo-link{
-           text-decoration: none;
-           color: inherit;
-       }
-       
-       .button{
-            display: flex;
-            padding: 0;
-            text-align: center;
-            text-decoration: none;
-            border-radius:50px;
-            transition: color .15s;
-        }
-       
-       .button {
-         transition-duration: 0.4s;
-       }
-
-       .button:hover {
-         background-color: DodgerBlue; /* DodgerBlue */
-         color: white;
-       }
-       
-       @media only screen and (max-width:1024px) {
-           .navbar-menu{
-               gap: .5rem;
-           }
-           
-           .button{
-               padding-inline: 1.5rem;
-           }
-           
-       }
-       
-       @media only screen and (max-width:768px) {
-           :root{
-               font-size: 15px;
-           }
-           
-           .navbar-menu{
-               position: absolute;
-               top: -100vh;
-               left: 0;
-               width: 100%;
-               flex-direction: column;
-               padding: .5rem 4% 1rem;
-               background-color: #212529;
-               z-index: -1;
-               transition: top .5s;
-           }
-           
-           .navbar-toggler{
-               display: block;
-               font-size: 1.5rem;
-           }
-           
-           .navbar-toggler-check:checked + .navbar-menu{
-               top: 64px;
-           }
-       }
-       
-       h4 {
-           color: #596B92;
-           
-       }
-       
-       h5 {
-           color: #596B92;
-           
-       }
-       
-       h6 {
-           color: rgba(255, 255, 255, .5);
-           
-       }
-       
-       /* toggle */
-       
-       .dark-mode {
-           background-color: #DBDFE2;
-           color: #2d313a;
-       }
-
-   </style>
-   
-   <script>
-           function changeMode() {
-              var element = document.body;
-              element.classList.toggle("dark-mode");
-           }
-   </script>
-   
    </head>
    <body class="page">
       <header class="navbar">
@@ -243,16 +21,6 @@
              <h1 class="logo">
                 <img src="https://avatars.githubusercontent.com/u/6248794?s=96&v=4" width="50">
             </h1>
-             <div align="left">
-                 <div id="container">
-                 <h6>Toggle</h6>
-                 <br>
-                 <label class="switch">
-                 <input type="checkbox" onclick="changeMode()">
-                 <span class="slider"></span>
-                 </label>
-                 </div>
-             </div>
              <label for="navbar-toggler" class="navbar-toggler">
                <i class="fas fa-bars"></i>
             </label>
@@ -275,10 +43,231 @@
      </div>
      <head>
      <br>
-         <!-- Slider -->
         <head>
           <title>Slideshow Github</title>
           <style>
+              /* css by chris1111 */
+
+              @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+              body {
+                margin: 0;
+                padding: 0;
+                font-family: "Open Sans", sans-serif;
+                background: #2d313a;
+                transition: .6s;
+              }
+              #container {
+                width: 10%;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              .switch {
+                position: relative;
+                display: inline-block;
+                width: 70px;
+                height: 38px;
+                border-radius: 50px;
+                box-shadow: 0px 0px 4px 4px rgb(0,0,0);
+              }
+              .switch input {
+                display: none;
+              }
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(180deg,#777,#3a3a3a);
+                border-radius: 34px;
+                transition: .4s;
+              }
+              .slider:before {
+                content: "";
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                left: 5px;
+                bottom: 4px;
+                background: url(PICS/Toggle.png);
+                border-radius: 50%;
+                box-shadow: 0px 0px 4px 4px rgb(0,0,0);
+                transition: .4s;
+              }
+              input:checked + .slider {
+                background: DodgerBlue;
+              }
+              input:checked + .slider:before {
+                transform: translateX(30px);
+              }
+              .dark-mode {
+                background: #2d313a;
+              }
+
+              /*
+               navbar part:
+               */
+              
+              :root{
+                  font-family: "Open Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 400;
+              }
+              
+              *{
+                  margin: 0;
+                  box-sizing: border-box;
+              }
+              
+              .page{
+                  min-height: 100vh;
+                  background-color: #2d313a;
+                  color: #000;
+              }
+              
+              .navbar{
+                  position: sticky;
+                  top: 0;
+                  background-color: #212529;
+                  color: #fff;
+              }
+              
+              .navbar-inner{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: space-between;
+                  height: 100px;
+                  max-width: 1440px;
+                  margin-inline: auto;
+                  padding-inline: 4%;
+              }
+              
+              .navbar-toggler,
+              .navbar-toggler-check{
+                  display: none;
+              }
+              
+              .navbar-menu{
+                  display: flex;
+                  flex-direction: row;
+                  gap: 1rem;
+              }
+              
+              .navbar-link{
+                  display: block;
+                  padding: .5rem 1.25rem;
+                  text-align: center;
+                  text-decoration: none;
+                  color: rgba(255, 255, 255, .5);
+                  transition: color .15s;
+              }
+              
+              .navbar-link:hover{
+                  color: #fff;
+              }
+              
+              .navbar-link-active{
+                  color: #fff;
+                  pointer-events: none;
+              }
+              
+              .logo{
+                  font-family: "Montserrat", sans-serif;
+                  font-size: 1.75rem;
+                  font-weight: 600;
+                  letter-spacing: 1px;
+              }
+              
+              .logo-link{
+                  text-decoration: none;
+                  color: inherit;
+              }
+              
+              .button{
+                   display: flex;
+                   padding: 0;
+                   text-align: center;
+                   text-decoration: none;
+                   border-radius:50px;
+                   transition: color .15s;
+               }
+              
+              .button {
+                transition-duration: 0.4s;
+              }
+
+              .button:hover {
+                background-color: DodgerBlue; /* DodgerBlue */
+                color: white;
+              }
+              
+              @media only screen and (max-width:1024px) {
+                  .navbar-menu{
+                      gap: .5rem;
+                  }
+                  
+                  .button{
+                      padding-inline: 1.5rem;
+                  }
+                  
+              }
+              
+              @media only screen and (max-width:768px) {
+                  :root{
+                      font-size: 15px;
+                  }
+                  
+                  .navbar-menu{
+                      position: absolute;
+                      top: -100vh;
+                      left: 0;
+                      width: 100%;
+                      flex-direction: column;
+                      padding: .5rem 4% 1rem;
+                      background-color: #212529;
+                      z-index: -1;
+                      transition: top .5s;
+                  }
+                  
+                  .navbar-toggler{
+                      display: block;
+                      font-size: 1.5rem;
+                  }
+                  
+                  .navbar-toggler-check:checked + .navbar-menu{
+                      top: 64px;
+                  }
+              }
+              
+              h4 {
+                  color: #596B92;
+                  
+              }
+              
+              h5 {
+                  color: #596B92;
+                  
+              }
+              
+              h6 {
+                  color: rgba(255, 255, 255, .5);
+                  
+              }
+              
+              /* toggle */
+              
+              .dark-mode {
+                  background-color: #DBDFE2;
+                  color: #2d313a;
+              }
+              
+              /* slider */
+              
               body {
               background: #2d313a;
              }
@@ -383,6 +372,12 @@
               }
             }
           </style>
+          <script>
+                  function changeMode() {
+                     var element = document.body;
+                     element.classList.toggle("dark-mode");
+                  }
+          </script>
         </head>
         <body>
             <div class="slideshow-container">
@@ -1082,14 +1077,14 @@
               timeoutId = setTimeout(showSlides, 4000); // Change image every 4 seconds
             }
           </script>
-          <br><br><br><br><br><br>
+          <br><br>
           <div align="center">
           <img src="PICS/GlassSupport.png" alt="Support Donate" style="width:20%;">
                   </strong><right><br><strong></strong><form style="" target="_top" method="post" action="https://www.paypal.com/cgi-bin/webscr"><input value="_donations" name="cmd" type="hidden" /><input value="leblond1111@gmail.com" name="business" type="hidden" /><input value="EN" name="lc" type="hidden" /><input value="chris1111 Github" name="item_name" type="hidden" /><input value="0" name="no_note" type="hidden" /><input value="EUR" name="currency_code" type="hidden" /><input value="PP-DonationsBF:don13.png:NonHostedGuest" name="bn" type="hidden" /><input alt="PayPal - The simplest and most secure online payment solution!" name="submit" border="0" src="PICS/PayPal-Donate-Button.png" type="image" /><img style="width: 1px; height: 1px;" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" border="0" alt="" /></form><strong>
           </form>
           </div>
                   <!-- FOOTER  -->
-    <br><br><br>
+    <br><br>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
        <a href="https://www.insanelymac.com/forum/profile/951341-chris1111/"><img SRC="PICS/Insanelymac.png"</a>
