@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>chris1111 Github pages</title>
+   <title>chris1111 Github pages</title>
    </head>
    <body class="page">
       <header class="navbar">
@@ -22,12 +22,12 @@
              <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
             <nav class="navbar-menu">
                 <div class="w3-container">
-                    <p><button class="w3-button"><div id="container">
+                    <p><button class="w3-button w3-border w3-hover-dark-grey"><span><div id="container">
                         <label class="switch">
                         <input type="checkbox" onclick="changeMode()">
                         <span class="slider"></span>
                         </label>
-                        </div>☀︎ Toggle ☽</button></p>
+                        </div>☀︎ Toggle ☽</span></button></p>
                     </div>
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
@@ -141,14 +141,16 @@
                  transition: filter .15s;
               }
 
-              .w3-button {width:100px}
-              font-size: 10px;
+              .w3-button {width:110px}
+              
               }
               
               .w3-button:hover {
-                  background-color: #2d313a;
+                  background-color: #212529;
               }
-
+              
+                  
+              
               .button:hover{
                   filter: brightness(.9);
               }
