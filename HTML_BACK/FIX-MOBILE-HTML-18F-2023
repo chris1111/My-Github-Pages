@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <title>chris1111 Github pages</title>
+    <title>chris1111 Github pages</title>
    </head>
    <body class="page">
       <header class="navbar">
@@ -21,13 +20,13 @@
             </label>
              <input type="checkbox" id="navbar-toggler" class="navbar-toggler-check">
             <nav class="navbar-menu">
-                <div class="w3-container">
-                    <p><button class="w3-button w3-border w3-hover-dark-grey"><span><div id="container">
+                <div class="button button1">
+                    <p><button class="button button1"><div id="container">
                         <label class="switch">
                         <input type="checkbox" onclick="changeMode()">
                         <span class="slider"></span>
                         </label>
-                        </div>☀︎ Toggle ☽</span></button></p>
+                        </div>☀︎ Toggle ☽</button></p>
                     </div>
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
@@ -130,30 +129,24 @@
               }
               
 
-              .button{
-                 display: inline-block;
-                 padding: .5rem 1.75rem;
-                 text-align: center;
-                 text-decoration: none;
-                 background-color: #0d6efd;
-                 color: #fff;
-                 border-radius: 9999px;
-                 transition: filter .15s;
-              }
-
-              .w3-button {width:110px}
-              
+              .button {
+                background-color: #212529; /* Dark */
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
               }
               
-              .w3-button:hover {
-                  background-color: #212529;
+              .button1 {
+                background-color: #212529;
+                color: Silver;
               }
               
-                  
-              
-              .button:hover{
-                  filter: brightness(.9);
-              }
               
               @media only screen and (max-width:1024px) {
                   .navbar-menu{
