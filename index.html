@@ -26,7 +26,7 @@
                         <input type="checkbox" onclick="changeMode()">
                         <span class="slider"></span>
                         </label>
-                        </div>☀︎ Toggle ☽</button></p>
+                        </div></button></p>
                     </div>
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111?tab=repositories" class="navbar-link">Github Repos</a>
@@ -328,28 +328,28 @@
                   bottom: 0;
                   background: linear-gradient(180deg,#777,#3a3a3a);
                   border-radius: 34px;
-                  transition: .4s;
+                  transition: 0.3s;
               }
               .slider:before {
-                  content: "";
+                  content: url(PICS/moon.circle.png);
                   position: absolute;
                   height: 30px;
                   width: 30px;
                   left: 5px;
                   bottom: 4px;
-                  background: url(PICS/Toggle.png);
                   border-radius: 50%;
-                  box-shadow: 0px 0px 4px 4px rgb(0,0,0);
-                  transition: .4s;
+                  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+                  transition: 0.3s;
               }
               input:checked + .slider {
-                  background: DodgerBlue;
+                  background: #D3D3D3;
               }
               input:checked + .slider:before {
                   transform: translateX(30px);
+                  content: url(PICS/sun.circle.png);
               }
               .dark-mode {
-                  background: #2d313a;
+                  background: #A9A9A9;
               }
               
               /* toggle */
