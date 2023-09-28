@@ -1,0 +1,5 @@
+#!/bin/sh
+apptitle="Github Pages"
+version="1.0"
+
+open 'https://chris1111.github.io/My-Github-Pages/'

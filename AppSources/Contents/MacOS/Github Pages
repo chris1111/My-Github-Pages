@@ -1,0 +1,11 @@
+#!/bin/sh
+PARENTDIR=$(dirname "$0")
+cd "$PARENTDIR"
+apptitle="Github Pages.app"
+version="1.0"
+Sleep 2
+cp -r ./PackageRoot/"Github Pages.app" /Applications
+
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Github Pages.app", hidden:false}'
+Sleep 1
+Open -a /Applications/"Github Pages.app"
