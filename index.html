@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet" href="./style.css">
     <title>chris1111 Github pages</title>
+    <link rel="stylesheet" href="./style.css">
    </head>
    <body class="page">
       <header class="navbar">
@@ -31,7 +31,7 @@
                     </div>
                <a href="https://github.com/chris1111/My-Github-Pages/discussions" class="navbar-link">Discussions</a>
                <a href="https://github.com/chris1111" class="navbar-link">Github chris1111</a>
-               <a href="https://chris1111.github.io/My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>
+               <a href="https://chris1111.github.io/My-Simple-OC-Themes/" class="navbar-link">OpenCore Design</a>              
                <a href="https://github.com/chris1111" class="navbar-link">About</a>
                <a href="https://www.hackintosh-montreal.com/h31-page-accueil" class="navbar-link">Forum</a>
                <a href="https://github.com/chris1111/My-Github-Pages/blob/main/StatusApp.md" class="navbar-link">StatusBar App</a>
@@ -49,184 +49,6 @@
      <br>
      <head>
           <title>Slideshow Github</title>
-          <style>
-              /* css by chris1111 */
-              /* slider */
-              
-              body {
-                  background: #2d313a;
-              }
-              
-              * {
-                  box-sizing: border-box
-              }
-              body {
-                  font-family: Verdana, sans-serif;
-                  margin: 0
-              }
-              .mySlides {
-                  display: none
-              }
-              
-              img {
-                  
-              }
-              
-              .slideshow-container {
-                  max-width: 300px;
-                  position: relative;
-                  margin: auto;
-                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                  
-              }
-              
-              /* Next & previous buttons */
-              .prev,
-              .next {
-                  cursor: pointer;
-                  position: absolute;
-                  top: 45%;
-                  width: auto;
-                  padding: 8px;
-                  margin-top: -22px;
-                  color: #33BEFF;
-                  font-weight: bold;
-                  font-size: 18px;
-                  transition: 0.6s ease;
-                  border-radius: 0 3px 3px 0;
-                  user-select: none;
-              }
-              
-              /* Position the "next button" to the right */
-              .next {
-                  right: 0;
-                  border-radius: 3px 0 0 3px;
-              }
-              /* On hover, add a black background color with a little bit see-through */
-              .prev:hover,
-              .next:hover {
-                  background-color: rgba(65, 69, 71);
-              }
-              /* Caption text */
-              .text {
-                  color: #ffffff;
-                  font-size: 12px;
-                  padding: 4px 6px;
-                  position: absolute;
-                  bottom: 4px;
-                  width: 100%;
-                  text-align: center;
-              }
-              /* Number text (1/3 etc) */
-              .numbertext {
-                  color: #ffffff;
-                  font-size: 12px;
-                  padding: 8px 12px;
-                  position: absolute;
-                  top: 0;
-              }
-              /* Fading animation */
-              .fade {
-                  -webkit-animation-name: fade;
-                  -webkit-animation-duration: 1.5s;
-                  animation-name: fade;
-                  animation-duration: 1.5s;
-              }
-              @-webkit-keyframes fade {
-                  from {
-                      opacity: .4
-                  }
-                  to {
-                      opacity: 1
-                  }
-              }
-              @keyframes fade {
-                  from {
-                      opacity: .4
-                  }
-                  to {
-                      opacity: 1
-                  }
-              }
-              /* On smaller screens, decrease text size */
-              @media only screen and (max-width: 300px) {
-                  .prev,
-                  .next,
-                  .text {
-                      font-size: 11px
-                  }
-              }
-              
-              /* Toggle Dark Light */
-              
-              @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-              body {
-                  margin: 0;
-                  padding: 0;
-                  font-family: "Open Sans", sans-serif;
-                  background: #2d313a;
-                  transition: .6s;
-              }
-              #container {
-                  position: sticky;
-                  cursor: pointer;
-                  top: 0;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-              }
-              .switch {
-                  position: relative;
-                  display: inline-block;
-                  width: 70px;
-                  height: 38px;
-                  border-radius: 50px;
-                  box-shadow: 0px 0px 4px 4px rgb(0,0,0);
-              }
-              .switch input {
-                  display: none;
-              }
-              .slider {
-                  position: absolute;
-                  cursor: pointer;
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  background: linear-gradient(180deg,#777,#3a3a3a);
-                  border-radius: 34px;
-                  transition: 0.3s;
-              }
-              .slider:before {
-                  content: url(PICS/moon.circle.png);
-                  position: absolute;
-                  height: 30px;
-                  width: 30px;
-                  left: 5px;
-                  bottom: 4px;
-                  border-radius: 50%;
-                  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-                  transition: 0.3s;
-              }
-              input:checked + .slider {
-                  background: #D3D3D3;
-              }
-              input:checked + .slider:before {
-                  transform: translateX(30px);
-                  content: url(PICS/sun.circle.png);
-              }
-              .dark-mode {
-                  background: #DBDFE2;
-              }
-              
-              /* toggle */
-              
-              .dark-mode {
-                  background-color: #DBDFE2;
-                  color: #2d313a;
-              }
-              
-          </style>
           <script>
               function changeMode() {
                  var element = document.body;
