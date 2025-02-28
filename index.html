@@ -18,7 +18,67 @@
 
 <body>
 
-    
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <div class="button button1">
+                <p><button class="button button1">
+                        <div id="container">
+                            <label class="switch">
+                                <input type="checkbox" onclick="changeMode()">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </button></p>
+            </div>
+            <li class="sidebar-brand"><a href="https://github.com/chris1111/My-Github-Pages/discussions">Discussions</a></li>
+            <li><a href="https://github.com/chris1111?tab=repositories">chris1111 Repositories</a></li>
+            <li><a href="https://chris1111.github.io/My-Simple-OC-Themes/">OpenCore Design</a></li>
+            <li><a href="https://github.com/chris1111">About</a></li>
+            <li><a href="https://www.hackintosh-montreal.com/h31-page-accueil">Forum</a></li>
+            <li><a href="https://github.com/chris1111/My-Github-Pages/blob/main/StatusApp.md">Status Bar App</a></li>
+            <li><a href="mailto:leblond1111@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+                    location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
 
 
     <header class="navbar">
