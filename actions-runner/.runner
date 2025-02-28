@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "Mac-mini",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus15.actions.githubusercontent.com/mcgtM6li3lus1JAkxWtbuA8YDushAz9TNmxfOdQu4RqYmieM6w/",
+  "gitHubUrl": "https://github.com/chris1111/My-Github-Pages",
+  "workFolder": "_work"
+}

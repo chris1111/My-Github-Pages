@@ -1,0 +1,199 @@
+[2025-02-28 13:01:57Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'Credentials': '/Users/chris/Github/My-Github-Pages/actions-runner/.credentials'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'Runner': '/Users/chris/Github/My-Github-Pages/actions-runner/.runner'
+[2025-02-28 13:01:57Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2025-02-28 13:01:57Z INFO Listener] RuntimeInformation: Darwin 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:22:00 PST 2025; root:xnu-11215.81.4~3/RELEASE_X86_64.
+[2025-02-28 13:01:57Z INFO Listener] Version: 2.322.0
+[2025-02-28 13:01:57Z INFO Listener] Commit: 0edc478ca75d0a753dcbcec7405f3f26db67b1ac
+[2025-02-28 13:01:57Z INFO Listener] Culture: en-CA
+[2025-02-28 13:01:57Z INFO Listener] UI Culture: en-CA
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO Listener] Validating directory permissions for: '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO CommandLineParser] Parse
+[2025-02-28 13:01:57Z INFO CommandLineParser] Parsing 5 args
+[2025-02-28 13:01:57Z INFO CommandLineParser] parsing argument
+[2025-02-28 13:01:57Z INFO CommandLineParser] HasArgs: False
+[2025-02-28 13:01:57Z INFO CommandLineParser] Adding Command: configure
+[2025-02-28 13:01:57Z INFO CommandLineParser] parsing argument
+[2025-02-28 13:01:57Z INFO CommandLineParser] HasArgs: True
+[2025-02-28 13:01:57Z INFO CommandLineParser] arg: url
+[2025-02-28 13:01:57Z INFO CommandLineParser] parsing argument
+[2025-02-28 13:01:57Z INFO CommandLineParser] HasArgs: True
+[2025-02-28 13:01:57Z INFO CommandLineParser] Adding option 'url': 'https://github.com/chris1111/My-Github-Pages'
+[2025-02-28 13:01:57Z INFO CommandLineParser] parsing argument
+[2025-02-28 13:01:57Z INFO CommandLineParser] HasArgs: True
+[2025-02-28 13:01:57Z INFO CommandLineParser] arg: token
+[2025-02-28 13:01:57Z INFO CommandLineParser] parsing argument
+[2025-02-28 13:01:57Z INFO CommandLineParser] HasArgs: True
+[2025-02-28 13:01:57Z INFO CommandLineParser] Adding option 'token': '***'
+[2025-02-28 13:01:57Z INFO Listener] Arguments parsed
+[2025-02-28 13:01:57Z INFO Runner] ExecuteCommand
+[2025-02-28 13:01:57Z INFO ConfigurationStore] currentAssemblyLocation: /Users/chris/Github/My-Github-Pages/actions-runner/bin/Runner.Listener.dll
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] binPath: /Users/chris/Github/My-Github-Pages/actions-runner/bin
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] RootFolder: /Users/chris/Github/My-Github-Pages/actions-runner
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'Runner': '/Users/chris/Github/My-Github-Pages/actions-runner/.runner'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] ConfigFilePath: /Users/chris/Github/My-Github-Pages/actions-runner/.runner
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'Credentials': '/Users/chris/Github/My-Github-Pages/actions-runner/.credentials'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] CredFilePath: /Users/chris/Github/My-Github-Pages/actions-runner/.credentials
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/chris/Github/My-Github-Pages/actions-runner/.credentials_migrated'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] MigratedCredFilePath: /Users/chris/Github/My-Github-Pages/actions-runner/.credentials_migrated
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:57Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:57Z INFO HostContext] Well known config file 'Service': '/Users/chris/Github/My-Github-Pages/actions-runner/.service'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/chris/Github/My-Github-Pages/actions-runner/.service
+[2025-02-28 13:01:57Z INFO CommandSettings] Flag 'help': 'False'
+[2025-02-28 13:01:57Z INFO CommandSettings] Flag 'version': 'False'
+[2025-02-28 13:01:57Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-02-28 13:01:57Z INFO CommandSettings] Flag 'check': 'False'
+[2025-02-28 13:01:57Z INFO CommandSettings] Command 'configure': 'True'
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE: |                       
+[2025-02-28 13:01:57Z INFO Terminal] WRITE: Self-hosted runner registration
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE:                         |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-02-28 13:01:57Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-02-28 13:01:57Z INFO ConfigurationManager] ConfigureAsync
+[2025-02-28 13:01:57Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2025-02-28 13:01:57Z INFO ConfigurationStore] IsConfigured()
+[2025-02-28 13:01:57Z INFO ConfigurationStore] IsConfigured: False
+[2025-02-28 13:01:57Z INFO ConfigurationManager] Is configured: False
+[2025-02-28 13:01:57Z INFO CommandSettings] Arg 'url': 'https://github.com/chris1111/My-Github-Pages'
+[2025-02-28 13:01:57Z INFO CommandSettings] Remove url from Arg dictionary.
+[2025-02-28 13:01:57Z INFO CommandSettings] Arg 'token': '***'
+[2025-02-28 13:01:57Z INFO CommandSettings] Remove token from Arg dictionary.
+[2025-02-28 13:01:57Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (C5CF:2282CA:10D3BF:21D513:67C1B3C5)
+[2025-02-28 13:01:57Z INFO ConfigurationManager] Using V2 flow: False
+[2025-02-28 13:01:57Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2025-02-28 13:01:57Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:01:57Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-02-28 13:01:57Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:01:57Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:01:57Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-02-28 13:01:57Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:01:57Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:01:57Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-02-28 13:01:57Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:01:58Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:01:58Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:01:58Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:01:58Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:01:58Z INFO ConfigurationManager] Test Connection complete.
+[2025-02-28 13:01:58Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:01:58Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:01:58Z INFO HostContext] Well known config file 'RSACredentials': '/Users/chris/Github/My-Github-Pages/actions-runner/.credentials_rsaparams'
+[2025-02-28 13:01:58Z INFO RSAFileKeyManager] Found existing RSA key parameters file /Users/chris/Github/My-Github-Pages/actions-runner/.credentials_rsaparams
+[2025-02-28 13:01:58Z INFO CommandSettings] Arg 'runnergroup': ''
+[2025-02-28 13:01:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-02-28 13:01:58Z INFO PromptManager] ReadValue
+[2025-02-28 13:01:58Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2025-02-28 13:01:58Z INFO Terminal] WRITE: [press Enter for Default] 
+[2025-02-28 13:01:58Z INFO Terminal] READ LINE
+[2025-02-28 13:02:13Z INFO Terminal] Read value: ''
+[2025-02-28 13:02:13Z INFO PromptManager] Falling back to the default: 'Default'
+[2025-02-28 13:02:13Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:02:13Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2025-02-28 13:02:13Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-02-28 13:02:13Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-02-28 13:02:13Z INFO CommandSettings] Arg 'name': ''
+[2025-02-28 13:02:13Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-02-28 13:02:13Z INFO PromptManager] ReadValue
+[2025-02-28 13:02:13Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-02-28 13:02:13Z INFO Terminal] WRITE: [press Enter for Mac-mini] 
+[2025-02-28 13:02:13Z INFO Terminal] READ LINE
+[2025-02-28 13:02:21Z INFO Terminal] Read value: ''
+[2025-02-28 13:02:21Z INFO PromptManager] Falling back to the default: 'Mac-mini'
+[2025-02-28 13:02:21Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:02:21Z INFO CommandSettings] Arg 'labels': ''
+[2025-02-28 13:02:21Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-02-28 13:02:21Z INFO PromptManager] ReadValue
+[2025-02-28 13:02:21Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'macOS', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-02-28 13:02:21Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-02-28 13:02:21Z INFO Terminal] READ LINE
+[2025-02-28 13:02:32Z INFO Terminal] Read value: ''
+[2025-02-28 13:02:32Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:02:32Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-02-28 13:02:32Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2025-02-28 13:02:33Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-02-28 13:02:33Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-02-28 13:02:33Z INFO ConfigurationStore] Saving OAuth credential @ /Users/chris/Github/My-Github-Pages/actions-runner/.credentials
+[2025-02-28 13:02:33Z INFO ConfigurationStore] Credentials Saved.
+[2025-02-28 13:02:33Z INFO ConfigurationStore] HasCredentials()
+[2025-02-28 13:02:33Z INFO ConfigurationStore] stored True
+[2025-02-28 13:02:33Z INFO CredentialManager] GetCredentialProvider
+[2025-02-28 13:02:33Z INFO CredentialManager] Creating type OAuth
+[2025-02-28 13:02:33Z INFO CredentialManager] Creating credential type: OAuth
+[2025-02-28 13:02:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/chris/Github/My-Github-Pages/actions-runner/.credentials_rsaparams
+[2025-02-28 13:02:33Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:02:33Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:02:33Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO RunnerServer] EstablishVssConnection
+[2025-02-28 13:02:33Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-02-28 13:02:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/chris/Github/My-Github-Pages/actions-runner/.credentials_rsaparams
+[2025-02-28 13:02:33Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/chris/Github/My-Github-Pages/actions-runner/.credentials_rsaparams
+[2025-02-28 13:02:33Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-02-28 13:02:33Z INFO CommandSettings] Arg 'work': ''
+[2025-02-28 13:02:33Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-02-28 13:02:33Z INFO PromptManager] ReadValue
+[2025-02-28 13:02:33Z INFO Terminal] WRITE: Enter name of work folder: 
+[2025-02-28 13:02:33Z INFO Terminal] WRITE: [press Enter for _work] 
+[2025-02-28 13:02:33Z INFO Terminal] READ LINE
+[2025-02-28 13:02:51Z INFO Terminal] Read value: ''
+[2025-02-28 13:02:51Z INFO PromptManager] Falling back to the default: '_work'
+[2025-02-28 13:02:51Z INFO ConfigurationStore] Saving runner settings.
+[2025-02-28 13:02:51Z INFO ConfigurationStore] Settings Saved.
+[2025-02-28 13:02:51Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:02:51Z INFO Terminal] WRITE LINE: 
+[2025-02-28 13:02:51Z INFO OsxServiceControlManager] Service name 'actions.runner.chris1111-My-Github-Pages.Mac-mini' display name 'GitHub Actions Runner (chris1111-My-Github-Pages.Mac-mini)' will be used for service configuration.
+[2025-02-28 13:02:51Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:02:51Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:02:51Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:02:51Z INFO HostContext] Well known directory 'Bin': '/Users/chris/Github/My-Github-Pages/actions-runner/bin'
+[2025-02-28 13:02:51Z INFO HostContext] Well known directory 'Root': '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:02:51Z INFO UnixUtil] Which2: 'chmod'
+[2025-02-28 13:02:51Z INFO UnixUtil] Location: '/bin/chmod'
+[2025-02-28 13:02:51Z INFO UnixUtil] Running /bin/chmod 755 "/Users/chris/Github/My-Github-Pages/actions-runner/svc.sh"
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper] Starting process:
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Arguments: '755 "/Users/chris/Github/My-Github-Pages/actions-runner/svc.sh"'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Working directory: '/Users/chris/Github/My-Github-Pages/actions-runner'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper] Process started with process id 4403, waiting for process exit.
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-02-28 13:02:51Z INFO ProcessInvokerWrapper] Finished process 4403 with exit code 0, and elapsed time 00:00:00.0119605.
+[2025-02-28 13:02:51Z INFO Listener] Runner execution has finished with return code 0
